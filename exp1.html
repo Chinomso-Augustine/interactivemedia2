@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentation 1</title>
+</head>
+
+<body>
+
+    <h1> Experimentation</h1>
+    <script>
+        //Loop through the code form 0 to 20
+        //If i is even, print +, else if old, print -, else print the value of myString
+        //
+        var myString = "";
+        for (var i = 0; i < 20; i++) {
+
+            if (i % 2 == 0) {
+                myString += "+";
+            }
+            else if (i % 2 == 1) {
+                myString += "-";
+            }
+            console.log(`${myString}`);
+        }
+
+        console.log("\n");
+
+        //Take my name, and turn it into upper case 
+        var name0 = "Chinomso";
+        var name1 = name0.toUpperCase();
+        console.log(`${name1}`);
+
+        //Take my name and turn it to lower case 
+        var name2 = name0.toLowerCase();
+        console.log(`${name2}`);
+
+        //Take my name and find the binary value at index 3
+        var name3 = name0.charCodeAt(3)
+        console.log(`${name3}`);
+
+        //Take my name and find the character at index 3
+        var name4 = name0.charAt(3)
+        console.log(`${name4}`);
+
+    </script>
+</body>
+
+</html>
