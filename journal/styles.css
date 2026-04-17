@@ -3,64 +3,82 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(245, 231, 213);
+    font-family:'Funnel Sans', sans-serif;
 }
 
 main {
     max-width: 1100px;
     width: 100%;
+    min-height: 750px;
     margin: 0 auto;
-    border: 2px solid rgb(241, 198, 198);
+    border: 2px solid rgb(183, 21, 21);
 }
 
 header {
     width: 100%;
-    height: 12em;
+    height: 10em;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(214, 174, 174);
 }
 
 h1 {
-margin-top: 2em;
-color: white;
-font-size: 2.5em;
+    color: white;
+    font-size: 3em;
+    font-family: 'Alfa Slab One', serif;
 }
 
-h2{
-    color: rgb(61, 1, 61);
-    font-size: 25px;
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
     text-align: center;
-}
-#art1 {
-    border: 3px solid rgb(191, 232, 191);
-    background-color: rgb(231, 231, 237);
-    width: 80%;
-    display: block;
-    font-family: sans-serif;
-    margin: 10px;
     padding: 10px;
-    border-radius: 25px;
-        line-height: 17px;
+    border-radius: 15px;
+    
 
+}
+#frame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
 
+article {
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(216, 127, 127);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vline {
+    border-left: 2px solid rgb(100, 171, 233);
+    height: 500px;
 }
 
 
-#art1 p {
-    width: 100%;
-    font-size: 13px;
+.Art1 {
+    margin-right: 70px;
+    margin-top: 50px;
+    background-color:rgb(236, 141, 141);
+    color: rgb(38, 2, 2);
+    cursor: pointer;
+
+}
+.Art2 {
+    margin-left: 70px;
+    margin-top: 300px;
+    background-color:rgb(116, 245, 135);
+    cursor: pointer;
 
 }
 
-#art1 li {
-    width: 100%;
-    font-size: 17px;
-}
-
-button{
-background-color: rgb(218, 187, 187);
-border-radius: 10px;
-text-decoration: none;
-border: none;
-height: 30px;
+hr{
+ color:rgb(100, 171, 233)
 }
