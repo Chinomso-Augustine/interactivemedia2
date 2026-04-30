@@ -18,13 +18,10 @@
 
     <p id="description"> </p>
 
-</body>
+
 
 <script>
 
-
-
-    
     var pTage = document.querySelector('#description');
 
     /*Function to verify if an intern qualify for a position
@@ -36,7 +33,7 @@
 
     function interns() {
         //Array and getting info
-        var userInfo = []; 
+        var userInfo = [];
         var name = prompt("What's your first and last name?");
         var age = parseInt(prompt("What's your age?"));
 
@@ -49,8 +46,8 @@
         userInfo.push(name);
         userInfo.push(age);
         var country = userInfo.push(prompt("Where are you from?"));
-        var school =userInfo.push(prompt("What school do you go to?"));
-        var major = userInfo.push( prompt("What's your major?"));
+        var school = userInfo.push(prompt("What school do you go to?"));
+        var major = userInfo.push(prompt("What's your major?"));
 
         //Returning information
         return innerHTML = `Hey ${userInfo[0]}, we are happy you're visiting our page.
@@ -63,4 +60,5 @@
 
 </script>
 
+</body>
 </html>
