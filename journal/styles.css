@@ -3,7 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(245, 231, 213);
-    font-family:'Funnel Sans', sans-serif;
+    font-family: 'Funnel Sans', sans-serif;
 }
 
 main {
@@ -27,58 +27,96 @@ h1 {
     color: white;
     font-size: 3em;
     font-family: 'Alfa Slab One', serif;
+    margin: 0;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgb(61, 1, 61);
     font-size: 22px;
     text-align: center;
-    padding: 10px;
-    border-radius: 15px;
-    
-
+    margin-bottom: 10px;
 }
+
 #frame {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 50px;
+    padding: 20px;
 }
 
 article {
-    width: 200px;
-    height: 150px;
+    width: 280px;
     border: 2px solid rgb(216, 127, 127);
     border-radius: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.vline {
-    border-left: 2px solid rgb(100, 171, 233);
-    height: 500px;
+.Art2 {
+    margin-right: 70px; 
+    background-color: rgb(116, 245, 135);
+    color: rgb(38, 2, 2);
+    min-height: 150px;
 }
 
 
 .Art1 {
-    margin-right: 70px;
-    margin-top: 50px;
-    background-color:rgb(236, 141, 141);
+    margin-left: 70px; 
+    margin-top: 40px; 
+    background-color: rgb(231, 231, 237);
     color: rgb(38, 2, 2);
-    cursor: pointer;
-
-}
-.Art2 {
-    margin-left: 70px;
-    margin-top: 300px;
-    background-color:rgb(116, 245, 135);
-    cursor: pointer;
-
+    min-height: 150px;
 }
 
-hr{
- color:rgb(100, 171, 233)
+.vline {
+    border-left: 2px solid rgb(100, 171, 233);
+    height: 1000px; 
+}
+
+.Art2 ul {
+    font-size: 13px;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.Art2 p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#art1 p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#art1 li {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#art1 li p {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+button {
+    background-color: rgb(218, 187, 187);
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+}
+
+
+hr {
+    border: 1px solid rgb(100, 171, 233);
 }
