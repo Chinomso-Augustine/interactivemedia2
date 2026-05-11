@@ -1,0 +1,45 @@
+body {
+    background: #d8dfb4;
+    border-top: 12px solid #b984ad;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 550px;
+    margin: 80px auto;
+}
+
+#myForm {
+    width: 480px;
+    padding: 35px;
+    background: #ebe2e6;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px gray;
+}
+
+#myForm label {
+    display: none;
+}
+
+#myForm input[type="text"] {
+    width: 205px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: #fffafb;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 24px auto;
+}
+
+#submitBtn {
+    padding: 8px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #b984ad;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
