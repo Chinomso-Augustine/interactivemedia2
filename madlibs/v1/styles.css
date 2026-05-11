@@ -6,17 +6,56 @@ body {
 }
 
 main {
-    width: 550px;
-    margin: 80px auto;
+    width: 1100px;
+    margin: 25px auto;
 }
 
-#myForm {
-    width: 480px;
-    padding: 35px;
+#heroBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#heroImage {
+    width: 1100px;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+#heroBox h2 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 1100px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+
+#formSection {
+    width: 1100px;
+}
+
+#myForm,
+#madlibText {
+    width: 460px;
+    height: 380px;
+    padding: 25px;
     background: #ebe2e6;
     border-radius: 30px;
     text-align: center;
     box-shadow: 0 4px 8px gray;
+    float: left;
+}
+
+#myForm {
+    margin-right: 40px;
+}
+
+#madlibText {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 #myForm label {
@@ -31,7 +70,7 @@ main {
     background: #fffafb;
     font-size: 16px;
     display: block;
-    margin: 0 auto 24px auto;
+    margin: 0 auto 14px auto;
 }
 
 #submitBtn {
