@@ -1,0 +1,96 @@
+body {
+    background: #d8dfb4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main {
+    width: 1100px;
+    height: 770px;
+    margin: 15px auto;
+    padding: 20px;
+    background: #f5eef2;
+    border: 4px solid #b984ad;
+    border-radius: 25px;
+}
+
+#heroBox {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#heroImage {
+    width: 1100px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+#heroBox h2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 1100px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+
+#formSection {
+    width: 1100px;
+}
+
+#myForm,
+#madlibText {
+    width: 460px;
+    height: 455px;
+    padding: 20px 25px;
+    background: #ebe2e6;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px gray;
+    float: left;
+}
+
+#myForm {
+    margin-right: 40px;
+}
+
+#madlibText {
+    font-size: 20px;
+    line-height: 30px;
+    display: table;
+}
+
+#madlib {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#myForm label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+#myForm input[type="text"] {
+    width: 205px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: #fffafb;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+#submitBtn {
+    padding: 8px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #b984ad;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
