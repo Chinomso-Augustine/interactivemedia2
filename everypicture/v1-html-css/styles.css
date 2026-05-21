@@ -39,7 +39,7 @@ h1 {
 }
 
 #firstGroup {
-    display: block;
+    display: none;
 }
 
 #secondGroup {
@@ -60,8 +60,8 @@ h1 {
 #card12,
 #card13,
 #card14 {
-    width: 160px;
-    height: 250px;
+    width: 200px;
+    height: 270px;
     padding: 8px;
     position: absolute;
     border-radius: 14px;
@@ -87,7 +87,6 @@ h1 {
 #card13:hover,
 #card14:hover {
     animation-play-state: paused;
-    filter: grayscale(0%);
 
 }
 
@@ -163,7 +162,7 @@ h1 {
 }
 
 .slot7 {
-    top: 370px;
+    top: 350px;
     right: -25px;
     transform: rotate(39deg);
     animation: rotateSlot7 .7s ease-in-out infinite alternate;
@@ -172,6 +171,8 @@ h1 {
 @keyframes rotateSlot1 {
     from {
         transform: rotate(-39deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -182,6 +183,7 @@ h1 {
 @keyframes rotateSlot2 {
     from {
         transform: rotate(-36deg);
+        filter: grayscale(0%);
     }
 
     to {
@@ -192,6 +194,8 @@ h1 {
 @keyframes rotateSlot3 {
     from {
         transform: rotate(-35deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -202,6 +206,8 @@ h1 {
 @keyframes rotateSlot4 {
     from {
         transform: translateX(-50%) rotate(0deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -212,6 +218,8 @@ h1 {
 @keyframes rotateSlot5 {
     from {
         transform: rotate(30deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -222,6 +230,8 @@ h1 {
 @keyframes rotateSlot6 {
     from {
         transform: rotate(36deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -232,6 +242,8 @@ h1 {
 @keyframes rotateSlot7 {
     from {
         transform: rotate(39deg);
+        filter: grayscale(0%);
+
     }
 
     to {
@@ -240,26 +252,25 @@ h1 {
 }
 
 .Info {
-    width: 300px;
-    height: 100px;
+    width: auto;
+    height: auto;
     position: absolute;
+    padding: 30px;
+    color: #efeeea;
     left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
     border-radius: 90px 90px 0 0;
-    background: #4c41a1;
+    background: #4d40ac;
     z-index: 3;
+    font-weight: 600;
+    font-size: 30px;
+    border: 20px dashed white;
+    cursor: pointer;
 
 }
 
-.Info p {
-    color: #f9e7b2;
-    position: relative;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    bottom: -10%;
-}
+
 
 @media (max-width: 900px) {
     .frame {
