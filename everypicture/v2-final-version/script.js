@@ -4,6 +4,8 @@
     let groupOne = document.querySelector("#firstGroup");
     let groupTwo = document.querySelector("#secondGroup");
     let btn = document.querySelector(".Info");
+    let animate = document.querySelector("#animate");
+    let frame = document.querySelector(".frame");
 
     function switching() {
         if (groupTwo.style.display == "block" && btn.textContent == "Switch") {
@@ -23,5 +25,17 @@
 
     btn.addEventListener('click', switching);
     setInterval(switching, 3000);
+
+    animate.addEventListener("click", function () {
+        frame.classList.toggle("isAnimating");
+
+        if (frame.classList.contains("isAnimating")) {
+            animate.textContent = "Stop";
+        }
+        else {
+            animate.textContent = "Animate";
+        }
+    });
+
 }
 )(); 

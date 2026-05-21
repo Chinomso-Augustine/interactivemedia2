@@ -70,6 +70,24 @@ h1 {
     cursor: pointer;
     z-index: 2;
     filter: grayscale(100%);
+    animation-play-state: paused;
+}
+
+.frame.isAnimating #card1,
+.frame.isAnimating #card2,
+.frame.isAnimating #card3,
+.frame.isAnimating #card4,
+.frame.isAnimating #card5,
+.frame.isAnimating #card6,
+.frame.isAnimating #card7,
+.frame.isAnimating #card8,
+.frame.isAnimating #card9,
+.frame.isAnimating #card10,
+.frame.isAnimating #card11,
+.frame.isAnimating #card12,
+.frame.isAnimating #card13,
+.frame.isAnimating #card14 {
+    animation-play-state: running;
 }
 
 #card1:hover,
@@ -291,7 +309,7 @@ h1 {
     #card12,
     #card13,
     #card14 {
-        width: 160px;
+        width: 200px;
         height: 200px;
     }
 
@@ -315,4 +333,26 @@ h1 {
     .slot6 {
         right: 70px;
     }
+}
+
+#animate {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid gold;
+    color: white;
+    background-color: #352f60;
+    font: 1.3em sans-serif;
+    cursor: pointer;
+}
+
+#animate:hover {
+    background-color: gold;
+    border: 6px solid white;
+    color: purple;
+    font: 1.3em sans-serif;
+    transform:scale(1.2);
 }

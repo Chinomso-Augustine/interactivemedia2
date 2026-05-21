@@ -266,7 +266,6 @@ h1 {
     font-weight: 600;
     font-size: 30px;
     border: 20px dashed white;
-    cursor: pointer;
 
 }
 
@@ -291,7 +290,7 @@ h1 {
     #card12,
     #card13,
     #card14 {
-        width: 160px;
+        width: 200px;
         height: 200px;
     }
 
