@@ -2,8 +2,8 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(245, 231, 213);
-    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to bottom, rgb(227, 207, 207), rgb(151, 151, 218));
+    background-repeat: no-repeat;
 }
 
 main {
@@ -11,7 +11,7 @@ main {
     width: 100%;
     min-height: 746px;
     margin: 0 auto;
-    border: 2px solid rgb(183, 21, 21);
+    border: 2px solid rgb(19, 5, 5);
 }
 
 header {
@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(214, 174, 174);
+    background-color: rgb(195, 161, 161);
 }
 
 h1 {
@@ -39,9 +39,8 @@ h2 {
 }
 
 p {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
-    letter-spacing: .5px;
     font-size: medium;
 }
 
@@ -72,7 +71,8 @@ article {
 }
 
 .Art1 {
-    background-color: rgb(208, 244, 183);
+    background-color: rgb(207, 137, 251);
+    color: white;
 }
 
 .Art2 {
@@ -86,7 +86,13 @@ article {
 .Art4 {
     background-color: rgb(208, 244, 183);
     width: 400px;
- 
+
+}
+
+.Art5 {
+    background-color: rgb(41, 156, 238);
+    width: 400px;
+    color: whitesmoke
 }
 
 figure img {
@@ -94,6 +100,7 @@ figure img {
     height: auto;
     border-radius: 30px;
 }
+
 #art3 {
     margin-top: 5px;
 }
@@ -113,7 +120,7 @@ article p {
 
 article li {
     font-size: 13px;
-    font-weight:lighter;
+    font-weight: lighter;
     margin-top: 8px;
 }
 
