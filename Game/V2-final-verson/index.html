@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <link href="styles.css" rel="stylesheet">
+     <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <h1>Car Race</h1>
+        <audio id="gasSound" src="Audio/Car Sound.mp3" preload="auto"></audio>
+        <audio id="backgroundSound" src="Audio/backgroundmusic - 6:8:26, 2.57 PM.m4a" preload="auto" loop></audio>
+       <section id="info"> 
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the
+            current
+            player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it
+            is
+            the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was
+            not
+            rolled) or if the current player feels that luck is running thin, they can pass to the other player. The
+            first
+            player to get 30 points or higher wins.</p>
+        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+</section>
+        <section id="gameEnv">
+
+            <div id="finishLine"></div>
+
+            <div id="scoreBoard">
+                <div class="player1Score">
+                    <h3>Player 1 Points</h3>
+                    <div class="scoreDesign player1board">0</div>
+                </div>
+
+                <div class="player2Score">
+                    <h3>Player 2 Points</h3>
+                    <div class="scoreDesign player2board">0</div>
+                </div>
+            </div>
+
+
+
+            <div class="track" id="player1Track">
+                <img src="./images/Player1car.svg" alt="Player 1 car" id="player1Car" class="car">
+            </div>
+
+            <div class="track" id="player2Track">
+                <img src="./images/Player2car.svg" alt="Player 2 car" id="player2Car" class="car">
+            </div>
+
+            <div id="diceArea">
+                <div class="die" id="die1">-</div>
+                <div class="die" id="die2">-</div>
+            </div>
+
+        </section>
+
+        <!-- Game buttons and player controls -->
+        <section id="ctrl">
+
+            <!-- Start button stays above the playing controls -->
+            <div id="start">
+                <div class="box">
+                    <h2>Start Game</h2>
+                    <button id="pick" type="button">Pick Player Randomly</button>
+                </div>
+            </div>
+
+            <!-- Controls used while the game is running -->
+            <div id="playing">
+                <div class="box" id="pedal">
+                    <p>Click Gas pedal to move</p>
+                    <img src="./images/gas.png" alt="Gas pedal" id="gas">
+
+                </div>
+
+                <div class="box">
+                    <p>Roll dice</p>
+                    <button id="roll" type="button">Roll</button>
+                </div>
+
+                <div class="box">
+                    <p>Make a choice</p>
+                    <button id="pass" type="button">Pass</button>
+                    <button id="again" type="button">Play Again</button>
+
+                </div>
+
+                <div class="box">
+                    <p>Quit?</p>
+                    <button id="quit" type="button">Quit</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript that runs the dice game and moves the cars -->
+   
+</body>
+
+</html>

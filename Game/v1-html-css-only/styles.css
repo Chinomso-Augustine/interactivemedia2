@@ -5,7 +5,7 @@ body {
     line-height: 1.5em;
 }
 
-button {
+button { 
     padding: 12px 20px;
     font-size: 16px;
     border: none;
@@ -25,7 +25,7 @@ div {
 }
 
 #scoreBoard {
-    display: flex;
+    display: flex; 
     gap: 30px;
     border-bottom: 4px solid white;
 }
@@ -62,47 +62,24 @@ div {
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 0;
-    background: repeating-conic-gradient(black 0% 25%,
-            white 0% 50%);
+    top:0;
+    background: repeating-conic-gradient(
+        black 0% 25%,
+        white 0% 50%
+    );
     background-size: 40px 40px;
     z-index: 30;
 }
 
-#gamecontrol,
-#score {
+#gamecontrol, #score {
     background-color: rgba(75, 57, 87, 0.79);
     color: white;
 }
 
-#gamecontrol {
-    margin-top: 20px;
-    display: flex;
+#game {
+    background-color: #eaeaea;
 }
 
-#gamecontrol h2 {
-    text-align: center;
-    margin-top: 0;
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
-
-.controlSection {
-    margin-bottom: 15px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.controlSection p {
-    margin-bottom: 10px;
-}
-
-#pedalArea {
-    text-align: center;
-}
-
-#gasPedal {
-    width: 80px;
-    height: auto;
+#actions {
+    background-color: silver;
 }
