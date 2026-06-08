@@ -1,0 +1,108 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+div {
+    padding: 20px;
+}
+
+#gameEnv {
+    position: relative;
+    min-height: 600px;
+    background: linear-gradient(to right, #c8b9cf, #55395d);
+    overflow: hidden;
+}
+
+#scoreBoard {
+    display: flex;
+    gap: 30px;
+    border-bottom: 4px solid white;
+}
+
+.scoreDesign {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track {
+    position: relative;
+    height: 150px;
+    border-bottom: 4px solid white;
+}
+
+.car {
+    width: 140px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+#finishLine {
+    width: 1%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: repeating-conic-gradient(black 0% 25%,
+            white 0% 50%);
+    background-size: 40px 40px;
+    z-index: 30;
+}
+
+#gamecontrol,
+#score {
+    background-color: rgba(75, 57, 87, 0.79);
+    color: white;
+}
+
+#gamecontrol {
+    margin-top: 20px;
+    display: flex;
+}
+
+#gamecontrol h2 {
+    text-align: center;
+    margin-top: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.controlSection {
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.controlSection p {
+    margin-bottom: 10px;
+}
+
+#pedalArea {
+    text-align: center;
+}
+
+#gasPedal {
+    width: 80px;
+    height: auto;
+}
