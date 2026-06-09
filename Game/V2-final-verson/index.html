@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Game</title>
     <link href="styles.css" rel="stylesheet">
-     <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <main>
 
         <h1>Car Race</h1>
-        <audio id="gasSound" src="Audio/Car Sound.mp3" preload="auto"></audio>
-        <audio id="backgroundSound" src="Audio/backgroundmusic - 6:8:26, 2.57 PM.m4a" preload="auto" loop></audio>
-       <section id="info"> 
-        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the
-            current
-            player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it
-            is
-            the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was
-            not
-            rolled) or if the current player feels that luck is running thin, they can pass to the other player. The
-            first
-            player to get 30 points or higher wins.</p>
-        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
-</section>
-        <section id="gameEnv">
+        <audio id="gasSound" src="Audio/car-sound.mp3" preload="auto"></audio>
+        <audio id="backgroundSound" src="Audio/background-music.m4a" preload="auto" loop></audio>
+       <div id="info"> 
+            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the
+                current
+                player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and
+                it
+                is
+                the other player’s turn. After each roll, the current player can either roll again, (assuming a "one"
+                was
+                not
+                rolled) or if the current player feels that luck is running thin, they can pass to the other player. The
+                first
+                player to get 30 points or higher wins.</p>
+            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+</div>
+        <div id="gameEnv">
 
             <div id="finishLine"></div>
 
             <div id="scoreBoard">
                 <div class="player1Score">
-                    <h3>Player 1 Points</h3>
+                    <h2>Player 1 Points</h2>
                     <div class="scoreDesign player1board">0</div>
                 </div>
 
@@ -58,10 +60,10 @@
                 <div class="die" id="die2">-</div>
             </div>
 
-        </section>
+        </div>
 
         <!-- Game buttons and player controls -->
-        <section id="ctrl">
+        <div id="ctrl">
 
             <!-- Start button stays above the playing controls -->
             <div id="start">
@@ -96,12 +98,12 @@
                     <button id="quit" type="button">Quit</button>
                 </div>
             </div>
-        </section>
+        </div>
 
     </main>
 
     <!-- JavaScript that runs the dice game and moves the cars -->
-   
+
 </body>
 
 </html>

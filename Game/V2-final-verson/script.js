@@ -46,7 +46,7 @@
         gameData.currentPlayer = Math.round(Math.random());
         gameData.score = [0, 0];
         gameData.gameStarted = true;
-        playSound(backgroundSound);
+        playBackgroundSound();
         resetGameBoard();
         setUpTurn();
     });
@@ -191,8 +191,8 @@
 
     // Shows the dice image files that match each roll
     function showDice(roll1, roll2) {
-        die1.innerHTML = `<img src="images/${roll1}die.jpg" alt="Die showing ${roll1}">`;
-        die2.innerHTML = `<img src="images/${roll2}die.jpg" alt="Die showing ${roll2}">`;
+        die1.innerHTML = `<img src="images/${roll1}die.png" alt="Die showing ${roll1}">`;
+        die2.innerHTML = `<img src="images/${roll2}die.png" alt="Die showing ${roll2}">`;
     }
 
     // Displaying turn and game messages near the dice
@@ -219,6 +219,17 @@
         gameData.pendingRoll2 = 0;
         gameData.pendingTotal = 0;
         gameData.waitingForGas = false;
+    }
+
+    // Keeps the background music playing continuously
+    function playBackgroundSound() {
+        if (!backgroundSound.paused) {
+            return;
+        }
+
+        return backgroundSound.play().catch(function () {
+            return Promise.resolve();
+        });
     }
 
     // Plays a sound from the beginning
