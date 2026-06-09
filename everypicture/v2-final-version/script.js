@@ -6,23 +6,32 @@
     let btn = document.querySelector(".Info");
     let animate = document.querySelector("#animate");
     let frame = document.querySelector(".frame");
+    let showingFirstGroup = false;
 
-    function switching() {
-        if (groupTwo.style.display == "block" && btn.textContent == "Switch") {
-            groupOne.style.display = "block";
-            groupTwo.style.display = "none";
+    function updateGroups() {
+        groupOne.classList.toggle("is-active", showingFirstGroup);
+        groupOne.classList.toggle("is-hidden", !showingFirstGroup);
+        groupTwo.classList.toggle("is-active", !showingFirstGroup);
+        groupTwo.classList.toggle("is-hidden", showingFirstGroup);
+
+        if (showingFirstGroup) {
             btn.textContent = "Switched";
             btn.style.color = "Gold";
             btn.style.border = "20px dashed gold";
         }
         else {
-            groupOne.style.display = "none";
-            groupTwo.style.display = "block";
             btn.textContent = "Switch";
+            btn.style.color = "#efeeea";
             btn.style.border = "20px dashed white";
         }
     }
 
+    function switching() {
+        showingFirstGroup = !showingFirstGroup;
+        updateGroups();
+    }
+
+    updateGroups();
     btn.addEventListener('click', switching);
     setInterval(switching, 3000);
 

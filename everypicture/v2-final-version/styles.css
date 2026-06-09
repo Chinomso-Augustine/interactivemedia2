@@ -7,6 +7,7 @@ body {
     padding-top: 50px;
     background: linear-gradient(to bottom, rgb(230, 209, 87), rgb(223, 131, 223));
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 
 }
 
@@ -19,8 +20,8 @@ h1 {
 }
 
 .frame {
-    width: 1200px;
-    height: 620px;
+    width: min(1200px, calc(100vw - 32px));
+    height: 700px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -44,6 +45,16 @@ h1 {
 
 #secondGroup {
     display: block;
+}
+
+#firstGroup.is-active,
+#secondGroup.is-active {
+    display: block;
+}
+
+#firstGroup.is-hidden,
+#secondGroup.is-hidden {
+    display: none;
 }
 
 #card1,
@@ -181,9 +192,10 @@ h1 {
 
 .slot7 {
     top: 350px;
-    right: -25px;
+    right: 20px;
     transform: rotate(39deg);
     animation: rotateSlot7 .7s ease-in-out infinite alternate;
+    z-index: 4;
 }
 
 @keyframes rotateSlot1 {
@@ -290,9 +302,33 @@ h1 {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
+    body {
+        padding: 24px 0;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin: 0 16px 20px;
+    }
+
     .frame {
-        height: 520px;
+        height: 420px;
+        border-radius: 34px 34px 0 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+    }
+
+    #firstGroup.is-active,
+    #secondGroup.is-active {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        min-width: max-content;
+        height: 100%;
+        padding: 82px 24px 118px;
     }
 
     #card1,
@@ -309,30 +345,67 @@ h1 {
     #card12,
     #card13,
     #card14 {
-        width: 200px;
-        height: 200px;
+        position: relative;
+        inset: auto;
+        flex: 0 0 clamp(140px, 18vw, 190px);
+        width: clamp(140px, 18vw, 190px);
+        height: clamp(180px, 24vw, 230px);
+        transform: rotate(0deg);
+        animation: none;
+        scroll-snap-align: center;
     }
 
     .centerCard {
-        width: 140px;
-        height: 190px;
+        flex-basis: clamp(140px, 18vw, 190px);
+        width: clamp(140px, 18vw, 190px);
+        height: clamp(180px, 24vw, 230px);
     }
 
+    .slot1,
     .slot2 {
-        left: 70px;
+        left: auto;
+    }
+    
+    .slot3 {
+        left: auto;
     }
 
-    .slot3 {
-        left: 210px;
+    .slot4 {
+        left: auto;
+        transform: rotate(0deg);
     }
 
     .slot5 {
-        right: 210px;
+        right: auto;
     }
 
-    .slot6 {
-        right: 70px;
+    .slot6,
+    .slot7 {
+        right: auto;
     }
+
+    .slot1,
+    .slot2,
+    .slot3,
+    .slot4,
+    .slot5,
+    .slot6,
+    .slot7 {
+        top: auto;
+        bottom: auto;
+        transform: rotate(0deg);
+    }
+
+    .Info {
+        padding: 18px 24px;
+        font-size: 22px;
+        border-width: 10px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 6;
+    }
+
 }
 
 #animate {
@@ -355,4 +428,51 @@ h1 {
     color: purple;
     font: 1.3em sans-serif;
     transform:scale(1.2);
+}
+
+@media (max-width: 1100px) {
+    #animate {
+        right: 20px;
+        top: 22px;
+        width: 78px;
+        height: 78px;
+        font-size: 1em;
+        z-index: 6;
+    }
+}
+
+@media (max-width: 620px) {
+    .frame {
+        height: auto;
+        align-items: center;
+    }
+#animate{
+    font-size: 10px;
+}
+    #firstGroup.is-active,
+    #secondGroup.is-active {
+        display: grid;
+        align-items: center;
+        gap: 14px;
+        padding: 76px 18px 104px;
+    }
+
+    #card1,
+    #card2,
+    #card3,
+    #card4,
+    #card5,
+    #card6,
+    #card7,
+    #card8,
+    #card9,
+    #card10,
+    #card11,
+    #card12,
+    #card13,
+    #card14,
+    .centerCard {
+        flex-basis: auto;
+        
+    }
 }
